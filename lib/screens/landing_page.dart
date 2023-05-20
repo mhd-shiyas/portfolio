@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/providers/scroll_provider.dart';
 
 import 'package:portfolio_website/screens/home/home_page.dart';
+import 'package:portfolio_website/screens/project/projects_screen.dart';
 
 import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
@@ -34,43 +35,8 @@ class _LandingPageState extends State<LandingPage> {
     List pages = [
       HomePage(),
       AboutPage(),
+      ProjectsScreen(),
       ServicePage(),
-      Container(
-        height: 200,
-        width: double.infinity,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Colors.black,
-        ),
-        child: Column(
-          // mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: Text(
-                'Email: chmuhdshiyas@gmail.com',
-                style: GoogleFonts.aldrich(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 15,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: Text(
-                'Mobile: +919061267606',
-                style: GoogleFonts.aldrich(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 15,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
     ];
     return Scaffold(
       appBar: PreferredSize(

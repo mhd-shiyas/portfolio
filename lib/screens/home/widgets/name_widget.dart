@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/responsive/responsive.dart';
+import 'package:portfolio_website/widgets/dribble.dart';
 import 'package:portfolio_website/widgets/github_card.dart';
 import 'package:portfolio_website/widgets/instagram_card.dart';
 import 'package:portfolio_website/widgets/linkdin_card.dart';
@@ -70,7 +71,7 @@ class _NameWidgetState extends State<NameWidget> {
               color: AppTheme.textColor2,
             ),
           ),
-          if (PortResponsive.isDesktop(context))
+        if (PortResponsive.isDesktop(context))
           Text(
             'SHIYAS',
             style: GoogleFonts.michroma(
@@ -215,6 +216,10 @@ class _NameWidgetState extends State<NameWidget> {
               width: 20,
             ),
             InstagramCard(),
+            SizedBox(
+              width: 20,
+            ),
+            dribbleCard(),
           ],
         )
         // EntranceFader(

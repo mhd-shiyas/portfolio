@@ -19,6 +19,8 @@ class _AppBarActionButtonState extends State<AppBarActionButton> {
   bool isHome = false;
   bool isAbout = false;
   bool isServices = false;
+  bool isProjects = false;
+
   @override
   Widget build(BuildContext context) {
     final scrollProvider = Provider.of<ScrollProvider>(context);
@@ -91,6 +93,35 @@ class _AppBarActionButtonState extends State<AppBarActionButton> {
             onTap: () {
               // widget.index;
               scrollProvider.setCurrentPage(2);
+            },
+            onHover: (value) {
+              if (value) {
+                setState(() => isProjects = true);
+              } else {
+                setState(() => isProjects = false);
+              }
+            },
+            child: Center(
+              child: Text("PROJECTS",
+                  style: GoogleFonts.aldrich(
+                      fontSize: 12,
+                      letterSpacing: 1,
+                      fontWeight: FontWeight.bold,
+                      color: isProjects
+                          ? Colors.white
+                          : Color.fromARGB(255, 68, 67, 67))),
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 50,
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: InkWell(
+            onTap: () {
+              // widget.index;
+              scrollProvider.setCurrentPage(3);
             },
             onHover: (value) {
               if (value) {
