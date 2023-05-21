@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class InstagramCard extends StatefulWidget {
-  const InstagramCard();
+  const InstagramCard({super.key});
 
   @override
   State<InstagramCard> createState() => _TwiterCardState();

@@ -7,7 +7,7 @@ import '../../../utils/theme.dart';
 class ServiceCard extends StatefulWidget {
   final String label;
   final int index;
-  const ServiceCard({
+  const ServiceCard({super.key, 
     required this.label,
     required this.index,
   });

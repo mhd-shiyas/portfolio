@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/responsive/responsive.dart';
-import 'package:portfolio_website/widgets/dribble.dart';
 import 'package:portfolio_website/widgets/github_card.dart';
 import 'package:portfolio_website/widgets/instagram_card.dart';
 import 'package:portfolio_website/widgets/linkdin_card.dart';
@@ -12,6 +11,7 @@ import 'package:portfolio_website/widgets/twitter_card.dart';
 import 'package:portfolio_website/widgets/entrance_fader.dart';
 
 import '../../../utils/theme.dart';
+import '../../../widgets/dribble.dart';
 
 class NameWidget extends StatefulWidget {
   const NameWidget({Key? key}) : super(key: key);
@@ -26,8 +26,6 @@ class _NameWidgetState extends State<NameWidget> {
 
   @override
   Widget build(BuildContext context) {
-    Offset distance = isHover ? Offset(10, 10) : Offset(28, 28);
-    double blur = isHover ? 5.0 : 50.0;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -219,7 +217,7 @@ class _NameWidgetState extends State<NameWidget> {
             SizedBox(
               width: 20,
             ),
-            dribbleCard(),
+            DribbleCard(),
           ],
         )
         // EntranceFader(

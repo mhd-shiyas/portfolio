@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/widgets/appbar_action_button.dart';
 
 import '../utils/theme.dart';
 
 class PortAppbar extends StatelessWidget {
+  const PortAppbar({super.key});
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth > 1200) {
-          return DesktopAppbar();
+          return const DesktopAppbar();
         } else if (constraints.maxWidth > 800 && constraints.maxWidth < 1200) {
-          return DesktopAppbar();
+          return const DesktopAppbar();
         } else {
-          return DesktopAppbar();
+          return const DesktopAppbar();
         }
       },
     );
@@ -22,6 +23,8 @@ class PortAppbar extends StatelessWidget {
 }
 
 class DesktopAppbar extends StatefulWidget {
+  const DesktopAppbar({super.key});
+
   @override
   State<DesktopAppbar> createState() => _DesktopAppbarState();
 }
@@ -40,6 +43,6 @@ class _DesktopAppbarState extends State<DesktopAppbar> {
               borderRadius: BorderRadius.circular(20),
               color: AppTheme.backgroundColor,
             ),
-            child: AppBarActionButton()));
+            child: const AppBarActionButton()));
   }
 }

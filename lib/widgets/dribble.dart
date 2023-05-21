@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class dribbleCard extends StatefulWidget {
-  const dribbleCard();
+class DribbleCard extends StatefulWidget {
+  const DribbleCard({super.key});
 
   @override
-  State<dribbleCard> createState() => _TwiterCardState();
+  State<DribbleCard> createState() => _TwiterCardState();
 }
 
-class _TwiterCardState extends State<dribbleCard> {
+class _TwiterCardState extends State<DribbleCard> {
   final Uri _url =
       Uri.parse('https://dribbble.com/Designwithxiaz');
   Future<void> _launchUrl() async {

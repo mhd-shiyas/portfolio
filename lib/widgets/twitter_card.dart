@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TwitterCard extends StatefulWidget {
-  const TwitterCard();
+  const TwitterCard({super.key});
 
   @override
   State<TwitterCard> createState() => _TwiterCardState();

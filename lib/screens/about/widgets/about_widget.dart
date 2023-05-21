@@ -34,7 +34,7 @@ class AboutWidget extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          Container(
+          SizedBox(
             child: Text(
               'I’m a Second Year Computer Science student enrolled in Calicut University.\nI have been developing mobile apps for over 1 year now.',
               style: GoogleFonts.aldrich(
@@ -92,7 +92,7 @@ class AboutWidget extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          DetailsWidget(),
+          const DetailsWidget(),
         ],
       );
     } else if (PortResponsive.isTablet(context)) {
@@ -118,7 +118,7 @@ class AboutWidget extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          Container(
+          SizedBox(
             child: Text(
               'I’m a Second Year Computer Science student enrolled in Calicut University.\nI have been developing mobile apps for over 1 year now.',
               style: GoogleFonts.aldrich(
@@ -176,7 +176,7 @@ class AboutWidget extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          DetailsWidget(),
+          const DetailsWidget(),
         ],
       );
     } else {
@@ -198,7 +198,7 @@ class AboutWidget extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          Container(
+          SizedBox(
             child: Text(
               'I’m a Second Year Computer Science student enrolled in Calicut University.\nI have been developing mobile apps for over 1 year now.',
               style: GoogleFonts.aldrich(

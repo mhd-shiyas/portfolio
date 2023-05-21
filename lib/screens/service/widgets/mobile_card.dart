@@ -5,7 +5,7 @@ import '../../../utils/theme.dart';
 
 class MobileCard extends StatefulWidget {
   final String label;
-  const MobileCard({
+  const MobileCard({super.key, 
     required this.label,
   });
 
@@ -32,7 +32,7 @@ class _ServiceCardState extends State<MobileCard> {
         }
       },
       child: Container(
-        margin: EdgeInsets.all(15),
+        margin: const EdgeInsets.all(15),
         height: 100,
         width: 100,
         decoration: BoxDecoration(
@@ -40,8 +40,8 @@ class _ServiceCardState extends State<MobileCard> {
             color: isPressed ? Colors.white : AppTheme.backgroundColor,
             boxShadow: [
               BoxShadow(
-                  color: Color.fromARGB(255, 68, 67, 67),
-                  offset: isPressed ? Offset(0, 0) : Offset(2, 2),
+                  color: const Color.fromARGB(255, 68, 67, 67),
+                  offset: isPressed ? const Offset(0, 0) : const Offset(2, 2),
                   spreadRadius: isPressed ? 0 : 2,
                   blurRadius: isPressed ? 0 : 3)
             ]),

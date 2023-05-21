@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class GitHubCard extends StatefulWidget {
-  const GitHubCard();
+  const GitHubCard({super.key});
 
   @override
   State<GitHubCard> createState() => _TwiterCardState();

@@ -8,8 +8,8 @@ class PicWidget extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 500,
-          width: 300,
+          height: 600,
+          width: 600,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             color: Colors.black,
@@ -18,9 +18,15 @@ class PicWidget extends StatelessWidget {
         Positioned(
             bottom: -40,
             left: -80,
-            child: Image.asset(
-              'assets/images/rizcop.png',
-              fit: BoxFit.cover,
+            child: SizedBox(
+              height: 500,
+              width: 500,
+              child: Image.asset(
+                'assets/images/scrop.png',
+                // height: 400,
+                // width: 500,
+                fit: BoxFit.cover,
+              ),
             )),
       ],
     );

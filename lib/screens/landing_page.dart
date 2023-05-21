@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/providers/scroll_provider.dart';
 
 import 'package:portfolio_website/screens/home/home_page.dart';
@@ -33,14 +32,14 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     final scrollProvider = Provider.of<ScrollProvider>(context);
     List pages = [
-      HomePage(),
-      AboutPage(),
-      ProjectsScreen(),
+      const HomePage(),
+      const AboutPage(),
+      const ProjectsScreen(),
       ServicePage(),
     ];
     return Scaffold(
-      appBar: PreferredSize(
-          preferredSize: const Size(100, 100), child: PortAppbar()),
+      appBar: const PreferredSize(
+          preferredSize:  Size(100, 100), child: PortAppbar()),
       backgroundColor: AppTheme.backgroundColor,
       body: ScrollablePositionedList.builder(
         itemCount: pages.length,

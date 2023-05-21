@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LinkedinCard extends StatefulWidget {
-  const LinkedinCard();
+  const LinkedinCard({super.key});
 
   @override
   State<LinkedinCard> createState() => _TwiterCardState();

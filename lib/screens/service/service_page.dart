@@ -123,7 +123,7 @@ class ServicePage extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              Container(
+              SizedBox(
                 height: 200,
                 child: PageView(
                   controller: _pageController,

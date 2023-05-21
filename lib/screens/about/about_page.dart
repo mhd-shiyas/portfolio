@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/responsive/responsive.dart';
 import 'package:portfolio_website/screens/about/widgets/about_widget.dart';
-import 'package:portfolio_website/screens/home/widgets/name_widget.dart';
-import 'package:portfolio_website/screens/home/widgets/pic_widget.dart';
 
 import '../../utils/theme.dart';
 
@@ -31,7 +29,7 @@ class AboutPage extends StatelessWidget {
                 style: GoogleFonts.aldrich(
                     fontWeight: FontWeight.bold,
                     fontSize: 140,
-                    color: Color.fromARGB(255, 68, 67, 67)),
+                    color: const Color.fromARGB(255, 68, 67, 67)),
               ),
             )
             // PicWidget(),

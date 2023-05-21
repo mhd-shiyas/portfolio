@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 class AppBarActionButton extends StatefulWidget {
   // final String label;
   // final int index;
-  AppBarActionButton(
+ const AppBarActionButton({super.key}
       // required this.label,
       // required this.index,
       );
@@ -51,12 +51,12 @@ class _AppBarActionButtonState extends State<AppBarActionButton> {
                       fontWeight: FontWeight.bold,
                       color: isHome
                           ? Colors.white
-                          : Color.fromARGB(255, 68, 67, 67))),
+                          : const Color.fromARGB(255, 68, 67, 67))),
             ),
           ),
         ),
         const SizedBox(
-          width: 50,
+          width: 20,
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -80,12 +80,12 @@ class _AppBarActionButtonState extends State<AppBarActionButton> {
                       fontWeight: FontWeight.bold,
                       color: isAbout
                           ? Colors.white
-                          : Color.fromARGB(255, 68, 67, 67))),
+                          : const Color.fromARGB(255, 68, 67, 67))),
             ),
           ),
         ),
         const SizedBox(
-          width: 50,
+          width: 20,
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -109,12 +109,12 @@ class _AppBarActionButtonState extends State<AppBarActionButton> {
                       fontWeight: FontWeight.bold,
                       color: isProjects
                           ? Colors.white
-                          : Color.fromARGB(255, 68, 67, 67))),
+                          : const Color.fromARGB(255, 68, 67, 67))),
             ),
           ),
         ),
         const SizedBox(
-          width: 50,
+          width: 20,
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -138,7 +138,7 @@ class _AppBarActionButtonState extends State<AppBarActionButton> {
                       fontWeight: FontWeight.bold,
                       color: isServices
                           ? Colors.white
-                          : Color.fromARGB(255, 68, 67, 67))),
+                          : const Color.fromARGB(255, 68, 67, 67))),
             ),
           ),
         ),
